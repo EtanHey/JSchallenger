@@ -13,11 +13,13 @@ html, body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 form {
   width: clamp(15vw, 30vw, 50vw);
   min-height: clamp(10vh, 20vh, 30vh);
+  padding: 1em 1em 2em 1em;
 }
 
 strong {
