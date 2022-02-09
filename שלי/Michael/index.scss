@@ -1,0 +1,23 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.wrapper{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+form{
+    width: clamp(15vw, 30vw, 50vw);
+    min-height: clamp(10vh, 20vh, 30vh);
+
+}
+strong{
+    color:red
+}

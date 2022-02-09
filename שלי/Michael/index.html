@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/index.css">
+    <title>Michaels 6 functions</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="seconds">
+            <form onSubmit="hoursToSeconds(event)">
+                <lable for='hours'>Type in the amount of hours you want to convert to seconds:</lable>
+                <input name='hours' type="number" >
+            </form>
+            <div data-seconds-output id="secondsOutput"></div>
+        </div>
+        <div id="area">
+            <form onSubmit="triangleArea(event)">
+                <fieldset>
+                    <legend><h1>Triangle Area calculation</h1></legend>
+                    <lable for='height'>whats the height of your triangle?</lable>
+                    <input name='height' type="number" id='height' placeholder="height of your triangle">
+                    <lable for='base'>whats the base of your triangle?</lable>
+                    <input name='base' type="number" id='base' placeholder="base of your triangle">
+                    <input type="submit" value="submit">
+                </fieldset>
+            </form>
+            <div data-area-output id="areaOutput"></div>
+        </div>
+        <div id="electric">
+            <form onSubmit="handleResistance(event)">
+                <fieldset>
+                    <legend><h1>Triangle Area calculation</h1></legend>
+                    <lable for='voltage'>whats the voltage?</lable>
+                    <input name='voltage' type="number" id='voltage' placeholder="voltage">
+                    <lable for='current'>whats the current?</lable>
+                    <input name='current' type="number" id='current' placeholder="current">
+                    <input type="submit" value="submit">
+                </fieldset>
+            </form>
+            <div data-resistance-output id="resistanceOutput"></div>
+        </div>
+        <div id="twoNumbersOfArray">
+            <form onSubmit="handleArrayFromUser(event)">
+                <input type="number" name="array" id="array" placeholder="Enter a few number for my array">
+                <input type="submit" value="submit">
+            </form>
+            <div data-array-output id="arrayOutput"></div>
+        </div>
+        <div id="twoDigets">
+            <form onSubmit="handleTwoDigits(event)">
+                <lable for="td">Check if your number is higher than if it was flipped:</lable>
+                <input type="number" name="td" id="td" placeholder="Enter a two digits number">
+                <input type="submit" value="submit">
+            </form>
+            <div data-two-digits-output id="twoDigetsOutput"></div>
+        </div>
+    </div>
+</body>
+<script src="./dist/index.js"></script>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onSubmit='handleResault(event)'>
+        <input type="number" name="a" id="a" placeholder="Enter your first number">
+        <input type="number" name="b" id="b" placeholder="Enter your second number">
+        <input type="submit" value='Check your %'>
+    </form>
+    <div id="resault"></div>
+    2 string a long number
+    <form onSubmit='handleString(event)'>
+        <input type="number" name="numbers" id="numbers" placeholder="Enter a few numbers">
+        <input type="submit" value='show your numbers'>
+    </form>
+    <input type="submit" onClick='handleReverseString(event)'>
+    <ul id="allNumbers"></ul>
+</body>
+<script src="./dist/script.js"></script>
+
+</html>

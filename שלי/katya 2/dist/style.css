@@ -1,0 +1,32 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+form {
+  position: absolute;
+  height: 80vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+form input {
+  border: none;
+}
+form input:focus {
+  outline: 0;
+}
+form #radio {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+form #radio > * {
+  flex: 1 50%;
+}
