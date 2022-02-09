@@ -21,7 +21,3 @@ form {
   min-height: clamp(10vh, 20vh, 30vh);
   padding: 1em 1em 2em 1em;
 }
-
-strong {
-  color: red;
-}

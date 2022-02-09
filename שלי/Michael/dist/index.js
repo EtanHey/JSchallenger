@@ -59,10 +59,10 @@ function handleTwoDigits(ev) {
         var twoDigetsFlipped = arrayFlipped.map(Number).join('');
         if (twoDigetString > twoDigetsFlipped) {
             ev.target.reset();
-            twoDigetsOutput.innerHTML = "<strong>True</strong>, " + twoDigetString + " > " + twoDigetsFlipped;
+            twoDigetsOutput.innerHTML = "<strong style=\"color:blue;\">True</strong>, " + twoDigetString + " > " + twoDigetsFlipped;
         }
         else {
-            twoDigetsOutput.innerHTML = "<strong>False</strong>, " + twoDigetString + " < " + twoDigetsFlipped;
+            twoDigetsOutput.innerHTML = "<strong style=\"color:red;\">False</strong>, " + twoDigetString + " < " + twoDigetsFlipped;
         }
         ev.target.reset();
     }
